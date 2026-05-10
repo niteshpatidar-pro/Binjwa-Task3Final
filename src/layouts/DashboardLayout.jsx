@@ -6,10 +6,10 @@ function DashboardLayout() {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
-    <div className="min-h-screen bg-white">
-      <div className="mx-auto flex max-w-[1600px]">
+    <div className="min-h-screen bg-[#f7f7f7]">
+      <div className="mx-auto flex max-w-[1480px] gap-2.5 p-2.5">
         <Sidebar mobileOpen={mobileOpen} setMobileOpen={setMobileOpen} />
-        <main className="flex-1 p-4 md:p-6">
+        <main className="flex-1">
           <Outlet />
         </main>
       </div>

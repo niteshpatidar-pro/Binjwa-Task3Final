@@ -4,11 +4,11 @@ const tabs = ['Call Details', 'Transcript', 'Recording', 'More']
 
 function Tabs({ activeTab, setActiveTab }) {
   return (
-    <div className="relative flex gap-2 overflow-x-auto border-b border-orange-100 pb-2">
+    <div className="relative flex gap-3 overflow-x-auto border-b border-zinc-200 pb-1.5">
       {tabs.map((tab) => (
-        <button key={tab} onClick={() => setActiveTab(tab)} className={`relative rounded-xl px-3 py-2 text-sm whitespace-nowrap ${activeTab === tab ? 'text-orange-600' : 'text-zinc-500'}`}>
+        <button key={tab} onClick={() => setActiveTab(tab)} className={`relative px-1 py-1.5 text-sm font-semibold whitespace-nowrap ${activeTab === tab ? 'text-[#ea8d3f]' : 'text-zinc-500'}`}>
           {tab}
-          {activeTab === tab && <motion.span layoutId="tabUnderline" className="absolute right-2 bottom-0 left-2 h-0.5 rounded bg-orange-500" />}
+          {activeTab === tab && <motion.span layoutId="tabUnderline" className="absolute right-0 bottom-0 left-0 h-0.5 rounded bg-[#ea8d3f]" />}
         </button>
       ))}
     </div>

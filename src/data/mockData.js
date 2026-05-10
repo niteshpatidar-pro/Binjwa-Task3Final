@@ -88,3 +88,64 @@ export const recordingMeta = {
   filename: 'call-c-10001.wav',
   duration: '05:16',
 }
+
+export const contactsData = [
+  { id: 1, name: 'Anuj Jhariya', phone: '+91 98765 12345', email: 'anuj.jhariya@crmflow.in', business: 'Apex Realty', date: '12 Jan 2026', tags: ['Hot Lead', 'WhatsApp'], avatar: 'AJ' },
+  { id: 2, name: 'Bandana Sharma', phone: '+91 98111 22334', email: 'bandana.sharma@nexahub.in', business: 'Nexa Hub', date: '15 Jan 2026', tags: ['VIP'], avatar: 'BS' },
+  { id: 3, name: 'Nalini Patel', phone: '+91 98980 90011', email: 'nalini.patel@sunrisecare.in', business: 'Sunrise Care', date: '19 Jan 2026', tags: ['Follow Up'], avatar: 'NP' },
+  { id: 4, name: 'Heena Khan', phone: '+91 99220 15551', email: 'heena.khan@blueorbit.in', business: 'Blue Orbit', date: '23 Jan 2026', tags: ['Converted'], avatar: 'HK' },
+  { id: 5, name: 'Raghav Tiwari', phone: '+91 99770 11223', email: 'raghav.tiwari@finaxis.in', business: 'Finaxis', date: '01 Feb 2026', tags: ['New'], avatar: 'RT' },
+  { id: 6, name: 'Priyanshi Verma', phone: '+91 98720 33445', email: 'priyanshi.verma@northpeak.in', business: 'North Peak', date: '05 Feb 2026', tags: ['Hot Lead'], avatar: 'PV' },
+  { id: 7, name: 'Mohit Bansal', phone: '+91 99341 00121', email: 'mohit.bansal@urbancrest.in', business: 'Urban Crest', date: '09 Feb 2026', tags: ['Email Sent'], avatar: 'MB' },
+]
+
+export const bulkActionsData = [
+  {
+    id: 1,
+    label: 'AI Calling Batch',
+    name: 'Mumbai AI Outreach',
+    subtext: 'Workflow sequence',
+    operation: 'Workflow',
+    status: 'Complete',
+    user: 'Rakhi Binjwa',
+    userEmail: 'rakhi@crm.com',
+    created: 'May 6, 2026 06:20 PM',
+    completed: 'May 6, 2026 06:20 PM'
+  },
+  {
+    id: 2,
+    label: 'Lead Workflow',
+    name: 'Insurance Lead Automation',
+    subtext: 'Workflow sequence',
+    operation: 'Workflow',
+    status: 'Running',
+    user: 'Sumit Chaudhary',
+    userEmail: 'sumit@crm.com',
+    created: 'Apr 18, 2026 01:58 PM',
+    completed: '-'
+  },
+  {
+    id: 3,
+    label: 'Webinar Campaign',
+    name: 'Webinar Followup Sequence',
+    subtext: 'Campaign sequence',
+    operation: 'Campaign',
+    status: 'Scheduled',
+    user: 'Admin',
+    userEmail: 'admin@crm.com',
+    created: 'Apr 20, 2026 10:00 AM',
+    completed: '-'
+  },
+  {
+    id: 4,
+    label: 'SMS Automation',
+    name: 'EMI Reminder Blast',
+    subtext: 'Campaign sequence',
+    operation: 'Campaign',
+    status: 'Failed',
+    user: 'Nitin Verma',
+    userEmail: 'nitin@crm.com',
+    created: 'Apr 25, 2026 11:40 AM',
+    completed: '-'
+  },
+]

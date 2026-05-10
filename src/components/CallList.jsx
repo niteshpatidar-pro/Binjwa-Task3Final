@@ -4,7 +4,7 @@ import CallLogItem from './CallLogItem'
 
 function CallList({ calls, selectedCallId, setSelectedCallId }) {
   return (
-    <motion.div variants={staggerContainer} initial="hidden" animate="visible" className="mt-3 max-h-[530px] space-y-2 overflow-y-auto pr-1 scrollbar-thin">
+    <motion.div variants={staggerContainer} initial="hidden" animate="visible" className="mt-3 min-h-0 flex-1 space-y-2 overflow-y-auto pr-1 scrollbar-thin">
       {calls.map((call) => (
         <motion.div key={call.id} variants={fadeUp}>
           <CallLogItem call={call} active={call.id === selectedCallId} onClick={() => setSelectedCallId(call.id)} />

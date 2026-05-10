@@ -7,14 +7,14 @@ function StatsCard({ stat }) {
   const Icon = stat.icon
 
   return (
-    <motion.div whileHover={{ y: -5 }} className="glass card-glow rounded-2xl p-4">
-      <div className="flex items-center justify-between text-zinc-500">
-        <p className="text-sm">{stat.label}</p>
-        <motion.div animate={{ rotate: [0, 8, -8, 0] }} transition={{ repeat: Infinity, duration: 3 }} className="rounded-xl bg-orange-100 p-2 text-orange-500">
-          <Icon size={16} />
-        </motion.div>
+    <motion.div whileHover={{ y: -1 }} className="glass card-glow rounded-[12px] border border-[#ffd7b0] px-3 py-2.5">
+      <div className="flex items-start justify-between text-zinc-500">
+        <p className="text-xs leading-tight">{stat.label}</p>
+        <div className="rounded-md bg-[#fff2e6] p-1.5 text-[#ea8d3f]">
+          <Icon size={12} />
+        </div>
       </div>
-      <p className="mt-3 text-2xl font-semibold text-zinc-800">{stat.prefix}{value}{stat.suffix}</p>
+      <p className="mt-2 text-[32px] font-semibold leading-none text-zinc-900">{stat.prefix}{value}{stat.suffix}</p>
     </motion.div>
   )
 }

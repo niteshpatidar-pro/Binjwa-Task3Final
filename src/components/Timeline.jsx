@@ -1,15 +1,21 @@
 function Timeline({ timeline }) {
+  const getEventColor = (key) => {
+    if (key === 'ring') return 'bg-sky-400'
+    if (key === 'answered') return 'bg-emerald-500'
+    if (key === 'ended') return 'bg-red-800'
+    return 'bg-[#ea8d3f]'
+  }
+
   return (
-    <div className="space-y-4">
-      {timeline.map((item, index) => (
-        <div key={item.key} className="flex gap-3">
+    <div className="space-y-3">
+      {timeline.map((item) => (
+        <div key={item.key} className="flex gap-2.5">
           <div className="flex flex-col items-center">
-            <span className="h-3 w-3 rounded-full bg-orange-500" />
-            {index < timeline.length - 1 && <span className="mt-1 h-8 w-px bg-orange-200" />}
+            <span className={`mt-1 h-2.5 w-2.5 rounded-full ${getEventColor(item.key)}`} />
           </div>
           <div>
-            <p className="text-sm font-medium text-zinc-700">{item.label}</p>
-            <p className="text-xs text-zinc-500">{item.value}</p>
+            <p className="text-base font-semibold leading-tight text-zinc-700">{item.label}</p>
+            <p className="text-sm text-zinc-500">{item.value}</p>
           </div>
         </div>
       ))}
